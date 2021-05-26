@@ -1,6 +1,9 @@
 
-.header{
-    font-family: 'Shrikhand', cursive;
-    text-align: center;
-    font-size: larger;
+@import "./base/polices";
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f3f3f3;
+    font-size: 1.5rem;
 }
