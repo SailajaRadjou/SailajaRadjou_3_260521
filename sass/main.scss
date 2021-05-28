@@ -1,16 +1,12 @@
 
 @import "./base/polices";
+@import "./layouts/section";
+@import "./layouts/nav";
 *,::before,::after{
     box-sizing: border-box;
 }
 
-.location{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#f3f3f3;
-    font-size: 1.5rem;
-}
+
 .animation{
     width: 100px;
     height: 100px;
@@ -54,28 +50,3 @@
         opacity: 0;
     }
 }
-
-.visiter{
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
-    
-}
-
-.service{
-    list-style-type: none;
-    width:25rem;
-    height: 5rem;
-    border: 1px solid black;
-    border-radius: 1.5rem 1.5rem;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-}
-.services{
-    display: flex;
-    justify-content: center;
-    
-
-}
-

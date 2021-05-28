@@ -1,0 +1,36 @@
+.service{
+    list-style-type: none;
+    width:25rem;
+    height: 5rem;
+    border: 1px solid black;
+    border-radius: 1.5rem 1.5rem;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.service_num{
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    transform: translateX(-15px);
+    background: pink;
+}
+
+.service_name{
+    padding-left: 20px;
+}
+
+@media screen and (max-device-width:580px)
+{
+    .services{
+        flex-flow: column wrap;
+    }    
+}
