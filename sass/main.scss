@@ -1,7 +1,9 @@
 
 @import "./base/polices";
+@import "./layouts/header";
 @import "./layouts/section";
 @import "./layouts/nav";
+@import "./layouts/footer";
 *,::before,::after{
     box-sizing: border-box;
 }
