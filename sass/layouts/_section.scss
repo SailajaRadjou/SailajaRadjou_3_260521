@@ -31,11 +31,16 @@
 }
 
 .resto{
+    position: relative;
     max-width:100%;
     max-height: 100%;
     border: 1px solid red;
     border-radius: 2rem 2rem;
     height: 300px;
+    cursor: pointer;
+    .block{
+        display: flex;
+    }
     &__image{
         width:550px;
         height: 200px;
@@ -45,18 +50,39 @@
     }
     &__info{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         height: 95px;
+        width:50%;
         &--name , &--area{
             padding-left: 10px;
         }
     }
-   /* .res{
+}    
+    
+
+    .heart-icon{
+        cursor: pointer;
         display: flex;
-        flex-direction: column;
-    }*/
-}
+        align-items: center;
+        width:50%;
+        &__unlike, &__like {
+            position: absolute;
+            font-size: 2.5rem;
+            transform: translateX(10rem);
+                    
+        }
+        &__like{
+            opacity: 0;
+            &:hover{
+            
+                opacity: 1;
+            
+        }
+        }
+       
+    }
+
 
 
 
