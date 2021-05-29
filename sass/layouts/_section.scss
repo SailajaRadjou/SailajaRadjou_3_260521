@@ -10,15 +10,30 @@
     display: flex;
     align-items: center;
     flex-flow: column wrap;
-    
+    &__title{
+        text-align: center;
+    }
 }
 
+.button{
+    width: 19rem;
+    height: 3rem;
+    border: 1px solid;
+    background:$primary-color;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
 
 
 .container{
     display: flex;
     flex-flow: column wrap;
     align-content: center;
+    padding: 20px 20px;
     &__resto{
         display: flex;
         flex-flow: row wrap;
@@ -26,7 +41,8 @@
         justify-content: space-around;
         border: 1px solid black;
         width: 80%;
-        height: 800px;
+        height: 100%;
+        padding: 20px 20px;
     }
 }
 
@@ -37,6 +53,7 @@
     border: 1px solid red;
     border-radius: 2rem 2rem;
     height: 300px;
+    
     cursor: pointer;
     .block{
         display: flex;
@@ -52,11 +69,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 95px;
+        height: 75px;
         width:50%;
         &--name , &--area{
-            padding-left: 10px;
+            padding-left: 15px;
+            
         }
+        
     }
 }    
     
@@ -66,22 +85,42 @@
         display: flex;
         align-items: center;
         width:50%;
-        &__unlike, &__like {
+        /*.fa-heart {
+            
+            
+            border-radius: 50%;
+            padding:.2em;
+        }
+        .fa-heart::before {
+            content: "\f004";
+            font-weight: bold;
+            transition: color 1s ease-out;
+        }
+        .fa-heart:hover::before{
+            color: red;
+            cursor: pointer;
+        }*/
+        &__unlike, &__like{
             position: absolute;
             font-size: 2.5rem;
+            font-weight: bold;
             transform: translateX(10rem);
-                    
+                
         }
         &__like{
-            opacity: 0;
-            &:hover{
-            
-                opacity: 1;
+            opacity: 0; 
             
         }
+        &__unlike:hover{
+                
+                    opacity: 1;
+                
+            }
+           
         }
+        
        
-    }
+    
 
 
 
