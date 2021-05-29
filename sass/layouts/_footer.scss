@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    flex-flow: column wrap;
+    background: grey;
+    &__title{
+        margin: 2rem 0rem 0rem 12rem;
+    }
+    &__list{
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+        
+        &--link{
+            list-style-type: none;
+            
+        }
+    }
+    &__deco{
+        
+        text-decoration: none;
+       
+    }
+}

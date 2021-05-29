@@ -1,8 +1,15 @@
-.footer_title{
+.footer{
+    &__title{
     font-family: 'Shrikhand', cursive;
-    
-    font-size: larger;
+    color: white;
+    }
+    &__deco{
+        font-size: 1.2rem;
+        color: white;
+        font-weight: bolder;
+    }
 }
-.main{
+body{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
