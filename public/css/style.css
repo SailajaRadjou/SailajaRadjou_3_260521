@@ -23,21 +23,50 @@
 }
 
 .container {
-  max-width: 100px;
-  max-height: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
 }
-
-.resto_container {
+.container__resto {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  width: 80%;
+  height: 800px;
 }
 
-.restaurant {
-  max-width: 100px;
-  max-height: 50px;
+.resto {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+.resto__image {
+  width: 500px;
+  height: 300px;
+  border: 1px solid blue;
+  object-fit: cover;
+}
+.resto__info {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
 }
 
-.service {
+.service__container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.service__container--title {
+  padding-left: 4rem;
+}
+.service__container .services {
+  display: flex;
+  justify-content: center;
+}
+.service__container .services__option {
   list-style-type: none;
   width: 25rem;
   height: 5rem;
@@ -47,13 +76,7 @@
   display: flex;
   align-items: center;
 }
-
-.services {
-  display: flex;
-  justify-content: center;
-}
-
-.service_num {
+.service__container .services__option--num {
   width: 30px;
   border: 1px solid black;
   border-radius: 50%;
@@ -62,8 +85,7 @@
   transform: translateX(-15px);
   background: pink;
 }
-
-.service_name {
+.service__container .services__option--name {
   padding-left: 20px;
 }
 
