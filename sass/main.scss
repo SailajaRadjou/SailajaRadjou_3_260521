@@ -1,6 +1,7 @@
 
 @import "./utils/variables";
 @import "./base/polices";
+@import "./components/buttons";
 @import "./layouts/header";
 @import "./layouts/section";
 @import "./layouts/nav";
@@ -19,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: spin 1.2s linear infinite;
+    animation: spin 1.2s linear;
 }
 
 
@@ -31,13 +32,13 @@
         transform: rotate(360deg);
     }
 }
+
 .loader{
     position: fixed;
-    z-index: 99;
+    z-index: 10000;
     top:0;
     left:0;
-    bottom: 0;
-    right: 0;
+    
     width: 100%;
     height: 100%;
     background: #f1f1f1;
@@ -51,5 +52,6 @@
 @keyframes fadeout{
     100%{
         opacity: 0;
+        z-index: -10;
     }
 }

@@ -1,0 +1,39 @@
+.button{
+    
+    width: 19rem;
+    height: 3rem;
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    border-radius: 2rem;
+    box-shadow: .25rem .25rem 10px rgb(37, 37, 37);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition-duration: .25s;
+    
+}
+.heart-icon{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width:50%;
+    font-size: 2.5rem;
+    mix-blend-mode: lighten;
+    &__unlike, &__like{
+        position: absolute;
+        font-size: 2.5rem;
+        font-weight: bold;
+        transform: translateX(10rem);
+    }
+    &__like{
+        color:$primary-color;
+        opacity: 0; 
+       &:hover{
+            opacity: 1;
+            transition: transform 700ms, color 1000ms, 700ms;
+        } 
+    }
+} 
+    
