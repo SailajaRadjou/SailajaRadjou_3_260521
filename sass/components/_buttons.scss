@@ -15,17 +15,17 @@
     
 }
 .heart-icon{
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
-    width:50%;
     font-size: 2.5rem;
     mix-blend-mode: lighten;
     &__unlike, &__like{
-        position: absolute;
+        
         font-size: 2.5rem;
         font-weight: bold;
-        transform: translateX(10rem);
+        transform: translateX(0rem);
     }
     &__like{
         color:$primary-color;
@@ -35,5 +35,10 @@
             transition: transform 700ms, color 1000ms, 700ms;
         } 
     }
+    @media screen and (max-device-width:760px)
+        {
+            font-size: 2rem;
+            transform: translateX(5rem);
+        }
 } 
     

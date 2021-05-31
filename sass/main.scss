@@ -9,7 +9,12 @@
 *,::before,::after{
     box-sizing: border-box;
 }
-
+html,body{
+    overflow-x:hidden;
+}
+body{
+    position: relative;
+}
 
 .animation{
     width: 100px;
