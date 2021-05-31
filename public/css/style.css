@@ -1,3 +1,5 @@
+/*font family*/
+/*media resposive*/
 .footer__title {
   font-family: "Shrikhand", cursive;
   color: white;
@@ -44,6 +46,7 @@ body {
 .heart-icon__like {
   color: #9356DC;
   opacity: 0;
+  transform: translateX(-2.5rem);
 }
 .heart-icon__like:hover {
   opacity: 1;

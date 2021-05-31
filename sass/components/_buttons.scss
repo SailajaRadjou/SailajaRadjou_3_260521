@@ -30,6 +30,7 @@
     &__like{
         color:$primary-color;
         opacity: 0; 
+        transform: translateX(-2.5rem);
        &:hover{
             opacity: 1;
             transition: transform 700ms, color 1000ms, 700ms;

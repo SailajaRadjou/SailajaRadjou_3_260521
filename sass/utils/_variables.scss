@@ -1,3 +1,17 @@
 $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $teritary-color:#99E2D0;
+$color-white: #fff;
+$color-gray--dark: #eaeaea;
+$color-gray--light:#f7f7f7;
+
+/*font family*/
+$font-title: 'Shrikhand', sans-serif;
+$font-text: 'Roberto', sans-serif;
+
+/*media resposive*/
+$breakpoints: (
+    mobile: 768px,
+    tablet: 1024px,
+    desktop: 1280px
+)
