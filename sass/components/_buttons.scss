@@ -1,36 +1,35 @@
 .button{
-    
     width: 19rem;
     height: 3rem;
-    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    @include button-color;
     border-radius: 2rem;
-    box-shadow: .25rem .25rem 10px rgb(37, 37, 37);
+    @include shadow;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.6rem;
     font-size: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: $white-color;
     cursor: pointer;
     transition-duration: .25s;
-    
+    &:hover{
+        @include shadow-hover;
+    }
+
 }
 .heart-icon{
     position: relative;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 2.5rem;
-    mix-blend-mode: lighten;
+    @include flex-center;
     &__unlike, &__like{
         
-        font-size: 2.5rem;
-        font-weight: bold;
+        font-size: 2.3rem;
+        color:$primary-color;
         transform: translateX(0rem);
     }
     &__like{
-        color:$primary-color;
+        
         opacity: 0; 
-        transform: translateX(-2.5rem);
+        transform: translateX(-2.3rem);
        &:hover{
             opacity: 1;
             transition: transform 700ms, color 1000ms, 700ms;
@@ -38,7 +37,7 @@
     }
     @media screen and (max-device-width:760px)
         {
-            font-size: 2rem;
+            font-size: 1.8rem;
             transform: translateX(5rem);
         }
 } 

@@ -1,15 +1,22 @@
+
+body{
+    font-family: $font-text;
+    margin: 0;
+    font-size: 1.2rem;
+    @media screen and (max-device-width:760px)
+    {
+        margin: 0;
+        font-size: .98rem;
+    }        
+}
+
 .footer{
     &__title{
-    font-family: 'Shrikhand', cursive;
-    color: white;
+    font-family: $font-title, cursive;
+    color: $white-color;
     }
     &__deco{
-        font-size: 1.2rem;
-        color: white;
+        color: $white-color;
         font-weight: bolder;
     }
-}
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
 }

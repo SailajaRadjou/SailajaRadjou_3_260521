@@ -1,7 +1,7 @@
 .footer{
     display: flex;
     flex-flow: column wrap;
-    background: grey;
+    @include footer-bg-color;
     &__title{
         text-align: left;
         padding-left: 10rem;
