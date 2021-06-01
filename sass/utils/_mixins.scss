@@ -17,6 +17,7 @@
 }
 @mixin footer-bg-color {
     background-color: $dark-gray;
+    color: $white-color;
 }
 /* Shadows */
 
@@ -33,4 +34,12 @@
 }
 @mixin button-color {
     background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+}
+
+/*font color for heart icon*/
+@mixin heart-color {
+    font-size: 2.4rem;
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

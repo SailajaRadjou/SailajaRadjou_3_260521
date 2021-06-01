@@ -5,7 +5,7 @@ $white-color: #f1f1f1;
 $dark-gray: rgb(70, 70, 70);
 $light-gray:rgba(240, 240, 240);
 $font-color:rgba(0, 0, 0);
-
+$loader-color:-webkit-linear-gradient($secondary-color, $primary-color);
 /*font family*/
 $font-title: 'Shrikhand', sans-serif;
 $font-text: 'Roberto', sans-serif;

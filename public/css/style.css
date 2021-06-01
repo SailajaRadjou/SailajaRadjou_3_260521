@@ -9,6 +9,7 @@ a {
 /* flex */
 /*Background Color*/
 /* Shadows */
+/*font color for heart icon*/
 body {
   font-family: "Roberto", sans-serif;
   margin: 0;
@@ -55,13 +56,15 @@ body {
   align-items: center;
 }
 .heart-icon__unlike, .heart-icon__like {
-  font-size: 2.3rem;
-  color: #9356DC;
+  font-size: 2.4rem;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: translateX(0rem);
 }
 .heart-icon__like {
   opacity: 0;
-  transform: translateX(-2.3rem);
+  transform: translateX(-2.39rem);
 }
 .heart-icon__like:hover {
   opacity: 1;
@@ -69,7 +72,6 @@ body {
 }
 @media screen and (max-device-width: 760px) {
   .heart-icon {
-    font-size: 1.8rem;
     transform: translateX(5rem);
   }
 }
@@ -106,7 +108,7 @@ body {
 }
 .visiter__description {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.6rem;
 }
 
@@ -115,6 +117,7 @@ body {
   align-items: center;
   flex-flow: column wrap;
   align-items: flex-start;
+  background-color: #f0f0f0;
 }
 .container__title {
   padding-left: 4rem;
@@ -155,17 +158,29 @@ body {
   border-radius: 2rem 2rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  background-color: #f1f1f1;
 }
 .resto__label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 .resto__image {
   width: 550px;
   height: 150px;
   border-radius: 2rem 2rem 0 0;
   object-fit: cover;
+}
+.resto__image--new {
+  background-color: #a3f0dd;
+  color: #206152;
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 0.6rem;
+  right: 1rem;
+  font-weight: bolder;
 }
 .resto__info {
   display: flex;
@@ -217,6 +232,7 @@ body {
   width: 20rem;
   height: 5rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
   border-radius: 1.5rem 1.5rem;
   margin: 20px;
   display: flex;
@@ -249,6 +265,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   background-color: #464646;
+  color: #f1f1f1;
 }
 .footer__title {
   text-align: left;
@@ -258,7 +275,7 @@ body {
   display: flex;
   width: 80%;
   justify-content: space-evenly;
-  margin-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .footer__list--link {
   list-style-type: none;
@@ -266,6 +283,7 @@ body {
 }
 .footer__deco {
   text-decoration: none;
+  padding-left: 0.5rem;
 }
 @media screen and (max-device-width: 760px) {
   .footer__title {
