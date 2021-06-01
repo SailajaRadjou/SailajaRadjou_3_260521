@@ -16,6 +16,12 @@ html,body{
 body{
     position: relative;
     color: $font-color;
+    width: 100%;
+    @media screen and (max-device-width:760px)
+    {
+        margin: 0;
+        position: relative;
+    }    
 }
 
 .animation{

@@ -34,6 +34,10 @@
             flex-flow: column wrap;
             width:auto;
             padding: 0;
+            margin: 0;
+            &__option{
+                width:17rem;
+            }    
         }
     }
 
@@ -42,9 +46,3 @@
 
 
 
-@media screen and (max-device-width:760px)
-{
-    .services{
-        flex-flow: column wrap;
-    }    
-}

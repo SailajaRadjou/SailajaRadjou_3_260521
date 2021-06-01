@@ -104,6 +104,11 @@ body {
 .visiter__title {
   text-align: center;
 }
+.visiter__description {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.6rem;
+}
 
 .container {
   display: flex;
@@ -128,22 +133,28 @@ body {
   padding: 25px 25px;
 }
 @media screen and (max-device-width: 760px) {
+  .container__title {
+    margin-left: 0rem;
+  }
   .container__resto {
     flex-flow: column wrap;
     justify-content: center;
     width: auto;
     padding: 0;
   }
+  .container__resto--content {
+    padding: 25px 12px;
+    width: 23rem;
+  }
 }
 
 .resto {
   position: relative;
-  max-width: auto;
-  max-height: auto;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 2rem 2rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  width: 550px;
 }
 .resto__label {
   display: flex;
@@ -175,12 +186,12 @@ body {
     justify-content: flex-start;
   }
   .resto__image {
-    width: 21rem;
+    width: 21.5rem;
     height: 8rem;
   }
   .resto__info {
-    width: 186px;
-    margin: 5px;
+    width: 195px;
+    margin: 10px 0px;
   }
   .resto__info--name, .resto__info--area {
     padding-left: 15px;
@@ -227,14 +238,13 @@ body {
     flex-flow: column wrap;
     width: auto;
     padding: 0;
+    margin: 0;
+  }
+  .services__option {
+    width: 17rem;
   }
 }
 
-@media screen and (max-device-width: 760px) {
-  .services {
-    flex-flow: column wrap;
-  }
-}
 .footer {
   display: flex;
   flex-flow: column wrap;
@@ -279,6 +289,13 @@ html, body {
 body {
   position: relative;
   color: black;
+  width: 100%;
+}
+@media screen and (max-device-width: 760px) {
+  body {
+    margin: 0;
+    position: relative;
+  }
 }
 
 .animation {
