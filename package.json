@@ -9,5 +9,13 @@
   },
   "author": "RadjouSailaja",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SailajaRadjou/SailajaRadjou_3_260521.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SailajaRadjou/SailajaRadjou_3_260521/issues"
+  },
+  "homepage": "https://github.com/SailajaRadjou/SailajaRadjou_3_260521#readme"
 }
