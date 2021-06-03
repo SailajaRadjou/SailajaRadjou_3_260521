@@ -21,14 +21,18 @@
             &--num{
                 width: 30px;
                 border-radius: 50%;
-                font-size: 1.5rem;
+                font-size: map-get($icon-font-size , "number-icon");
                 text-align: center;
                 transform: translateX(-15px);
                 @include button-color;
             }
+            &--icon{
+                font-size: map-get($icon-font-size , "nav-icon");
+            }
             &--name{
                 padding-left: 20px;
             }
+
         }
         @media screen and (max-device-width:760px)
         {

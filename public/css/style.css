@@ -5,6 +5,7 @@ a {
   color: black;
 }
 
+/*maps for icons*/
 /*media resposive*/
 /* flex */
 /*Background Color*/
@@ -246,6 +247,9 @@ body {
   transform: translateX(-15px);
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
+.services__option--icon {
+  font-size: 1.2rem;
+}
 .services__option--name {
   padding-left: 20px;
 }
@@ -278,6 +282,7 @@ body {
   padding-bottom: 2rem;
 }
 .footer__list--link {
+  font-size: 1.2rem;
   list-style-type: none;
   padding: 0.2rem;
 }
