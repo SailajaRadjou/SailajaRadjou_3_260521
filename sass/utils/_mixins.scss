@@ -3,12 +3,22 @@
 @mixin flex-center {
     display: flex;
     align-items: center;
+    
 }
-
 @mixin flex-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@mixin flex-flow{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+} 
+@mixin flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 /*Background Color*/
 @mixin bg-color {
