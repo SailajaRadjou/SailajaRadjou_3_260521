@@ -321,7 +321,8 @@ body {
   justify-content: space-around;
   flex-flow: column wrap;
 }
-.menu .option {
+
+.option {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -332,26 +333,42 @@ body {
   margin-bottom: 2rem;
   overflow: hidden;
   cursor: pointer;
-  max-width: 100%;
+  max-width: 350px;
+  height: 70px;
+  padding-left: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.menu .option__infos {
-  width: 26rem;
+.option__infos {
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.menu .option__infos--title, .menu .option__infos--description {
-  padding: 0.2rem 0.5rem 0.2rem 0.7rem;
+.option__infos--title, .option__infos--description {
   margin: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
 }
-.menu .option__price {
+.option__price {
   padding-right: 1rem;
 }
-.menu .option__check {
+.option__check {
   background-color: #99E2D0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
+  height: 5.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-duration: 0.5s;
+}
+.option:hover .option__check {
+  margin-right: 0px;
+  min-width: 4rem;
+  transition: margin-right 0.5s;
 }
 
 .service__container {
