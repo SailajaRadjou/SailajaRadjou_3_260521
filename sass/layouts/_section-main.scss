@@ -4,15 +4,18 @@
     background-color:darken($color: #f3f3f3, $amount: 5);
     @include header-shadow;
     font-size: map-get($icon-font-size , "location-icon");
-    padding-left: 9rem;
+    padding-left: 4rem;
     &__search{
         border: none;
-        width: 20rem;
+        width: 16rem;
         height: 3rem;
         background: transparent;
         padding: 1rem;
         font-size: 1.5rem;
     }
+   /* @media screen and (max-device-width:760px){
+        padding-left: 4rem;
+    }*/
 }
 
 .visiter{
