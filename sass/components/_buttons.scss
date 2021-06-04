@@ -20,6 +20,7 @@
     position: relative;
     cursor: pointer;
     @include flex-center;
+    border: none;
     &__unlike, &__like{
         
         @include heart-color;
@@ -42,4 +43,25 @@
             transform: translateX(5rem);
         }
 } 
-    
+ /*menu page button*/  
+.commander{
+    padding: 2rem;
+
+    &__button{
+        width: 12rem;
+        height: 3rem;
+        @include button-color;
+        border-radius: 2rem;
+        @include shadow;
+        text-align: center;
+        padding: 0.6rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $white-color;
+        cursor: pointer;
+        /*transition-duration: .25s;*/
+        &:hover{
+            @include shadow-hover;
+        }
+    }
+}

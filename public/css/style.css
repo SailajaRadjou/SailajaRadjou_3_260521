@@ -37,7 +37,7 @@ body {
   height: 3rem;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 2rem;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 0.6rem;
   font-size: 1.5rem;
@@ -55,6 +55,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  border: none;
 }
 .heart-icon__unlike, .heart-icon__like {
   font-size: 2.4rem;
@@ -75,6 +76,28 @@ body {
   .heart-icon {
     transform: translateX(5rem);
   }
+}
+
+/*menu page button*/
+.commander {
+  padding: 2rem;
+}
+.commander__button {
+  width: 12rem;
+  height: 3rem;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #f1f1f1;
+  cursor: pointer;
+  /*transition-duration: .25s;*/
+}
+.commander__button:hover {
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 /*main page*/
@@ -99,6 +122,10 @@ body {
 .menu__header--logo {
   width: 80%;
   text-align: center;
+  height: 2.5rem;
+}
+.menu__header--logosize {
+  height: 2.8rem;
 }
 
 .menu__image {
@@ -113,6 +140,15 @@ body {
   justify-content: center;
   background-color: #e6e6e6;
   box-shadow: 0px 0px 6px #464646;
+  font-size: 1.5rem;
+  padding-left: 9rem;
+}
+.location__search {
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  background: transparent;
+  padding: 1rem;
   font-size: 1.5rem;
 }
 
@@ -176,7 +212,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   border-radius: 2rem 2rem;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #f1f1f1;
 }
@@ -238,6 +274,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  background-color: #f0f0f0;
 }
 .menu-container__contents {
   display: flex;
@@ -246,7 +283,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  border: 1px solid black;
   border-radius: 3.5rem 3.5rem 0 0;
   margin-top: -3rem;
   background-color: #f0f0f0;
@@ -259,8 +295,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  justify-content: space-evenly;
-  border: 1px solid blue;
   width: auto;
   position: relative;
 }
@@ -269,29 +303,50 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  align-items: flex-start;
   width: 100%;
   flex-flow: row nowrap;
-  border: 1px solid red;
 }
 .menu__card {
-  border: 1px solid green;
-  width: 100%;
+  margin: 2rem;
 }
-.menu__card--options {
+.menu__card--display {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column wrap;
+}
+.menu .option {
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-items: last baseline;
-  border: 1px solid orange;
-  border-radius: 2rem 2rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(1, 1, 1, 0.2);
+  background-color: #f1f1f1;
+  border-radius: 1.5rem 1.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
 }
-
-.option__infos {
+.menu .option__infos {
   width: 26rem;
 }
-.option__infos--title, .option__infos--description {
+.menu .option__infos--title, .menu .option__infos--description {
   padding: 0.2rem 0.5rem 0.2rem 0.7rem;
   margin: 0.5rem;
+}
+.menu .option__price {
+  padding-right: 1rem;
+}
+.menu .option__check {
+  background-color: #99E2D0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
 }
 
 .service__container {
@@ -311,7 +366,7 @@ body {
   list-style-type: none;
   width: 20rem;
   height: 5rem;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   background-color: #f0f0f0;
   border-radius: 1.5rem 1.5rem;
   margin: 20px;

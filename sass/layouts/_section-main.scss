@@ -4,6 +4,15 @@
     background-color:darken($color: #f3f3f3, $amount: 5);
     @include header-shadow;
     font-size: map-get($icon-font-size , "location-icon");
+    padding-left: 9rem;
+    &__search{
+        border: none;
+        width: 20rem;
+        height: 3rem;
+        background: transparent;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
 }
 
 .visiter{
