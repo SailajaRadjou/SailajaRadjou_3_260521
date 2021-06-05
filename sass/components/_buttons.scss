@@ -10,9 +10,11 @@
     text-decoration: none;
     color: $white-color;
     cursor: pointer;
-    /*transition-duration: .25s;*/
+    transition-duration: .25s;
     &:hover{
         @include shadow-hover;
+        background-color: lighten($primary-color, 5%);
+        background-blend-mode: lighten;
     }
 
 }
@@ -37,11 +39,7 @@
             
         } 
     }
-    @media screen and (max-device-width:760px)
-        {
-            
-            transform: translateX(5rem);
-        }
+    
 } 
  /*menu page button*/  
 .commander{

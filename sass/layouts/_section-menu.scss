@@ -7,7 +7,7 @@
         width: 100%;
         height: 100%;
         border-radius: 3.5rem 3.5rem 0 0;
-        margin-top: -3rem;
+        margin-top: -4rem;
         @include bg-color;    
     }
 }
@@ -17,6 +17,11 @@
         @include flex-around;
         width: auto;
         position: relative;
+        @media screen and (max-width:map-get($breakpoints, mobile)){
+            &--title{
+                margin-left: 0rem;
+            }
+        }    
     }
 }
 .menu{
@@ -32,6 +37,13 @@
         }
         
     } 
+    @media screen and (max-width:map-get($breakpoints, mobile)){
+        display: flex;
+        flex-flow: column wrap;
+        &__card{
+            margin: 1rem;
+        }    
+    }    
 }
 .option{
     @include flex-between;
@@ -51,9 +63,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        &--title{
-            margin-top: 20px;
-        }
+        
         &--title,&--description{
             margin: .5rem;
            overflow: hidden;
@@ -72,7 +82,7 @@
         background-color: $teritary-color;
         font-size: map-get($icon-font-size , "check-icon");
         color: $white-color;
-        margin: -1rem -5rem -1rem 1rem;
+        margin: -1rem -4rem -1rem 1rem;
         width: 4rem;
         height: 5.5rem;
         @include flex-center;
@@ -84,6 +94,11 @@
         margin-right: 0px;
         min-width: 4rem;
         transition: margin-right 0.5s;
+        &--rotate{
+            transition-duration: 700ms;
+            transform: rotate(720deg);
+            
+        }
     }     
 }
 

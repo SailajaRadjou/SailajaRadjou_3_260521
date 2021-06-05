@@ -58,3 +58,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@mixin tablet {
+    @media screen and (min-width:map-get($breakpoints, tablet)){
+      @content;
+    }
+  }
+  @mixin mobile {
+    @media screen and (min-width:map-get($breakpoints, mobile)){
+      @content;
+    }
+  }

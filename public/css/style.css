@@ -44,10 +44,12 @@ body {
   text-decoration: none;
   color: #f1f1f1;
   cursor: pointer;
-  /*transition-duration: .25s;*/
+  transition-duration: 0.25s;
 }
 .button:hover {
   box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+  background-color: #a16be0;
+  background-blend-mode: lighten;
 }
 
 .heart-icon {
@@ -71,11 +73,6 @@ body {
 .heart-icon__like:hover {
   opacity: 1;
   transition: all 0.5s ease;
-}
-@media screen and (max-device-width: 760px) {
-  .heart-icon {
-    transform: translateX(5rem);
-  }
 }
 
 /*menu page button*/
@@ -289,7 +286,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 3.5rem 3.5rem 0 0;
-  margin-top: -3rem;
+  margin-top: -4rem;
   background-color: #f0f0f0;
 }
 
@@ -302,6 +299,11 @@ body {
   justify-content: space-around;
   width: auto;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .menu-header__container--title {
+    margin-left: 0rem;
+  }
 }
 
 .menu {
@@ -320,6 +322,15 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-flow: column wrap;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .menu__card {
+    margin: 1rem;
+  }
 }
 
 .option {
@@ -344,9 +355,6 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
-.option__infos--title {
-  margin-top: 20px;
-}
 .option__infos--title, .option__infos--description {
   margin: 0.5rem;
   overflow: hidden;
@@ -364,7 +372,7 @@ body {
   background-color: #99E2D0;
   font-size: 1.7rem;
   color: #f1f1f1;
-  margin: -1rem -5rem -1rem 1rem;
+  margin: -1rem -4rem -1rem 1rem;
   width: 4rem;
   height: 5.5rem;
   display: flex;
@@ -376,6 +384,10 @@ body {
   margin-right: 0px;
   min-width: 4rem;
   transition: margin-right 0.5s;
+}
+.option:hover .option__check--rotate {
+  transition-duration: 700ms;
+  transform: rotate(720deg);
 }
 
 .service__container {
