@@ -35,7 +35,6 @@
 }
 .option{
     @include flex-between;
-    align-items: last baseline;
     @include menu-option-shadow;
     @include bg-color-white;
     border-radius: 1.5rem 1.5rem;
@@ -52,6 +51,9 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        &--title{
+            margin-top: 20px;
+        }
         &--title,&--description{
             margin: .5rem;
            overflow: hidden;
@@ -61,10 +63,15 @@
         }
     }
     &__price{
+        display: flex;
+        align-self: last baseline;
+        padding-bottom: 0.65rem;
         padding-right: 1rem;
     }  
     &__check{
         background-color: $teritary-color;
+        font-size: map-get($icon-font-size , "check-icon");
+        color: $white-color;
         margin: -1rem -5rem -1rem 1rem;
         width: 4rem;
         height: 5.5rem;

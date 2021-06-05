@@ -326,7 +326,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-items: last baseline;
   box-shadow: 0.25rem 0.25rem 1rem rgba(1, 1, 1, 0.2);
   background-color: #f1f1f1;
   border-radius: 1.5rem 1.5rem;
@@ -345,6 +344,9 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
+.option__infos--title {
+  margin-top: 20px;
+}
 .option__infos--title, .option__infos--description {
   margin: 0.5rem;
   overflow: hidden;
@@ -353,10 +355,15 @@ body {
   font-size: 16px;
 }
 .option__price {
+  display: flex;
+  align-self: last baseline;
+  padding-bottom: 0.65rem;
   padding-right: 1rem;
 }
 .option__check {
   background-color: #99E2D0;
+  font-size: 1.7rem;
+  color: #f1f1f1;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
   height: 5.5rem;
