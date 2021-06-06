@@ -13,8 +13,7 @@
         padding: 1rem;
         font-size: 1.5rem;
     }
-    @media screen and (max-device-width:760px){
-        
+    @media screen and (max-width:map-get($breakpoints, mobile)){
         padding-left: 0rem;
     }
 }
@@ -58,8 +57,7 @@
             padding: 25px 25px;
         }
     }
-    @media screen and (max-device-width:760px)
-    {
+    @media screen and (max-width:map-get($breakpoints, mobile)){
         &__title{
             
             margin-left: 0rem;
@@ -89,6 +87,8 @@
     &__label{
         @include flex-between;
         padding-bottom: 1rem;
+        background-color: $white-color;
+        border-radius: 0 0 2rem 2rem;
     }
     &__image{
         width: 550px;
@@ -117,12 +117,11 @@
         }
         
     }
-    @media screen and (max-device-width:760px)
-    {
+    @media screen and (max-width:map-get($breakpoints, mobile)){
         width: auto;
-        &__label{
+       /* &__label{
             justify-content: flex-start;
-        }
+        }*/
         &__image{
             width: 21.5rem;
             height: 8rem;    

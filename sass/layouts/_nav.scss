@@ -34,8 +34,7 @@
             }
 
         }
-        @media screen and (max-device-width:760px)
-        {
+        @media screen and (max-width:map-get($breakpoints, mobile)){
             flex-flow: column wrap;
             width:auto;
             padding: 0;
@@ -44,7 +43,16 @@
                 width:17rem;
             }    
         }
-    }
+        @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+            flex-flow: column wrap;
+            width:auto;
+            padding: 0;
+            margin: 0;
+            &__option{
+                width:25rem;
+            }    
+        }    
+}
 
 
 

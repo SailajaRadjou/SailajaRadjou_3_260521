@@ -59,7 +59,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-@mixin tablet {
+/*@mixin tablet {
     @media screen and (min-width:map-get($breakpoints, tablet)){
       @content;
     }
@@ -68,4 +68,4 @@
     @media screen and (min-width:map-get($breakpoints, mobile)){
       @content;
     }
-  }
+  }*/

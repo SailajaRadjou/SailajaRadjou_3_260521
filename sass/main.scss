@@ -18,8 +18,7 @@ body{
     position: relative;
     color: $font-color;
     width: 100%;
-    @media screen and (max-device-width:760px)
-    {
+    @media screen and (max-width:map-get($breakpoints, mobile)){
         margin: 0;
         position: relative;
     }    

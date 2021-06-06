@@ -3,8 +3,7 @@ body{
     font-family: $font-text;
     margin: 0;
     font-size: 1.2rem;
-    @media screen and (max-device-width:760px)
-    {
+    @media screen and (max-width:map-get($breakpoints, mobile)){
         margin: 0;
         font-size: .98rem;
     }        

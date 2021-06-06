@@ -31,19 +31,27 @@
     flex-flow: row nowrap;
     &__card{
         margin: 2rem;
+        width:auto;
         &--display{
             @include flex-around;
             flex-flow: column wrap;
+            @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+                    align-items: flex-start;
+            }
         }
         
     } 
     @media screen and (max-width:map-get($breakpoints, mobile)){
-        display: flex;
+        
         flex-flow: column wrap;
         &__card{
-            margin: 1rem;
+            margin: .5rem;
         }    
-    }    
+    }
+    @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+        flex-flow: column wrap;
+    }     
+       
 }
 .option{
     @include flex-between;
@@ -63,7 +71,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        
+         
         &--title,&--description{
             margin: .5rem;
            overflow: hidden;
@@ -71,6 +79,7 @@
             white-space: nowrap;
             font-size: 16px;
         }
+            
     }
     &__price{
         display: flex;
@@ -96,10 +105,20 @@
         transition: margin-right 0.5s;
         &--rotate{
             transition-duration: 700ms;
-            transform: rotate(720deg);
+            transform: rotate(360deg);
             
         }
-    }     
+    }  
+    
+    @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+        min-width: 40rem;
+        &__infos{
+            width: 25rem;
+        } 
+        &__price{
+            padding-left: 6rem;
+        }   
+    }        
 }
 
 

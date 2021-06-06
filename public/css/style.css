@@ -11,12 +11,22 @@ a {
 /*Background Color*/
 /* Shadows */
 /*font color for heart icon*/
+/*@mixin tablet {
+    @media screen and (min-width:map-get($breakpoints, tablet)){
+      @content;
+    }
+  }
+  @mixin mobile {
+    @media screen and (min-width:map-get($breakpoints, mobile)){
+      @content;
+    }
+  }*/
 body {
   font-family: "Roberto", sans-serif;
   margin: 0;
   font-size: 1.2rem;
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-width: 767px) {
   body {
     margin: 0;
     font-size: 0.98rem;
@@ -25,10 +35,10 @@ body {
 
 .footer__title {
   font-family: "Shrikhand", sans-serif, cursive;
-  color: #f1f1f1;
+  color: #FFFFFF;
 }
 .footer__deco {
-  color: #f1f1f1;
+  color: #FFFFFF;
   font-weight: bolder;
 }
 
@@ -42,7 +52,7 @@ body {
   padding: 0.6rem;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #f1f1f1;
+  color: #FFFFFF;
   cursor: pointer;
   transition-duration: 0.25s;
 }
@@ -89,7 +99,7 @@ body {
   padding: 0.6rem;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #f1f1f1;
+  color: #FFFFFF;
   cursor: pointer;
   /*transition-duration: .25s;*/
 }
@@ -148,7 +158,7 @@ body {
   padding: 1rem;
   font-size: 1.5rem;
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-width: 767px) {
   .location {
     padding-left: 0rem;
   }
@@ -193,7 +203,7 @@ body {
 .container__resto--content {
   padding: 25px 25px;
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-width: 767px) {
   .container__title {
     margin-left: 0rem;
   }
@@ -216,13 +226,15 @@ body {
   border-radius: 2rem 2rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: #FFFFFF;
 }
 .resto__label {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 0 0 2rem 2rem;
 }
 .resto__image {
   width: 550px;
@@ -251,12 +263,12 @@ body {
   padding-left: 15px;
   margin: 0.5rem 0 0 1rem;
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-width: 767px) {
   .resto {
     width: auto;
-  }
-  .resto__label {
-    justify-content: flex-start;
+    /* &__label{
+         justify-content: flex-start;
+     }*/
   }
   .resto__image {
     width: 21.5rem;
@@ -300,7 +312,7 @@ body {
   width: auto;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-header__container--title {
     margin-left: 0rem;
   }
@@ -316,6 +328,7 @@ body {
 }
 .menu__card {
   margin: 2rem;
+  width: auto;
 }
 .menu__card--display {
   display: flex;
@@ -323,13 +336,22 @@ body {
   justify-content: space-around;
   flex-flow: column wrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu__card--display {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 767px) {
   .menu {
-    display: flex;
     flex-flow: column wrap;
   }
   .menu__card {
-    margin: 1rem;
+    margin: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu {
+    flex-flow: column wrap;
   }
 }
 
@@ -338,7 +360,7 @@ body {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0.25rem 0.25rem 1rem rgba(1, 1, 1, 0.2);
-  background-color: #f1f1f1;
+  background-color: #FFFFFF;
   border-radius: 1.5rem 1.5rem;
   margin-bottom: 2rem;
   overflow: hidden;
@@ -371,7 +393,7 @@ body {
 .option__check {
   background-color: #99E2D0;
   font-size: 1.7rem;
-  color: #f1f1f1;
+  color: #FFFFFF;
   margin: -1rem -4rem -1rem 1rem;
   width: 4rem;
   height: 5.5rem;
@@ -387,7 +409,18 @@ body {
 }
 .option:hover .option__check--rotate {
   transition-duration: 700ms;
-  transform: rotate(720deg);
+  transform: rotate(360deg);
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .option {
+    min-width: 40rem;
+  }
+  .option__infos {
+    width: 25rem;
+  }
+  .option__price {
+    padding-left: 6rem;
+  }
 }
 
 .service__container {
@@ -428,7 +461,7 @@ body {
 .services__option--name {
   padding-left: 20px;
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-width: 767px) {
   .services {
     flex-flow: column wrap;
     width: auto;
@@ -439,12 +472,23 @@ body {
     width: 17rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .services {
+    flex-flow: column wrap;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .services__option {
+    width: 25rem;
+  }
+}
 
 .footer {
   display: flex;
   flex-flow: column wrap;
   background-color: #464646;
-  color: #f1f1f1;
+  color: #FFFFFF;
 }
 .footer__title {
   text-align: left;
@@ -465,7 +509,7 @@ body {
   text-decoration: none;
   padding-left: 0.5rem;
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-width: 767px) {
   .footer__title {
     text-align: left;
     padding-left: 1rem;
@@ -473,6 +517,18 @@ body {
   .footer__list {
     flex-flow: column wrap;
     padding: 10px 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__title {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .footer__list {
+    width: auto;
+    justify-content: space-around;
+    padding: 0;
+    padding-bottom: 1rem;
   }
 }
 
@@ -489,7 +545,7 @@ body {
   color: black;
   width: 100%;
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-width: 767px) {
   body {
     margin: 0;
     position: relative;
@@ -523,7 +579,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #f1f1f1;
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
