@@ -14,7 +14,19 @@
     }
 }
 
-
+@keyframes like-heart {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        animation-delay: .2s;
+      opacity: 0.5;
+    }
+    100% {
+        animation-delay: .4s;
+      opacity: 1;
+    }
+  }
 
 @keyframes slideup{
     0%{
@@ -32,4 +44,3 @@
         opacity: 1;
     }
 } 
-
