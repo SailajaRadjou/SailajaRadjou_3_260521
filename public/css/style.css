@@ -21,6 +21,11 @@ a {
       @content;
     }
   }*/
+.menu-anim {
+  position: relative;
+  animation: slideoutup 900ms cubic-bezier(0, 0, 0, 1) forwards;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -35,18 +40,22 @@ a {
     z-index: -10;
   }
 }
-@keyframes fadein {
-  from {
-    opacity: 0.5;
-    transform: scale(1);
+@keyframes slideoutup {
+  0% {
+    transform: translateY(5px);
+    opacity: 0.3;
   }
-  to {
-    transform: translateY(-20px);
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-15px);
     opacity: 1;
   }
 }
 @keyframes slideup {
   0% {
+    transform: translateY(5px);
     opacity: 0;
   }
   25% {
@@ -374,6 +383,7 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-flow: column wrap;
+  padding-top: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .menu__card--display {
@@ -400,6 +410,7 @@ body {
   justify-content: space-between;
   box-shadow: 0.25rem 0.25rem 1rem rgba(1, 1, 1, 0.2);
   background-color: #FFFFFF;
+  position: relative;
   border-radius: 1.5rem 1.5rem;
   margin-bottom: 2rem;
   overflow: hidden;
@@ -409,7 +420,7 @@ body {
   padding-left: 4px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  animation: slideup 900ms cubic-bezier(0.26, 0.76, 0.71, 0.49) forwards 0.2s;
+  animation: slideup 1300ms cubic-bezier(0, 0, 0, 1) forwards 0.4s;
   opacity: 0;
 }
 .option__infos {
@@ -465,7 +476,72 @@ body {
 }
 
 .option1 {
-  animation: fadein 900ms cubic-bezier(0.26, 0.76, 0.71, 0.49) forwards;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(1, 1, 1, 0.2);
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 1.5rem 1.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 350px;
+  height: 70px;
+  padding-left: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.option1__infos {
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.option1__infos--title, .option1__infos--description {
+  margin: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+.option1__price {
+  display: flex;
+  align-self: last baseline;
+  padding-bottom: 0.65rem;
+  padding-right: 1rem;
+}
+.option1__check {
+  background-color: #99E2D0;
+  font-size: 1.7rem;
+  color: #FFFFFF;
+  margin: -1rem -4rem -1rem 1rem;
+  width: 4rem;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.option1:hover .option1__check {
+  margin-right: 0px;
+  min-width: 4rem;
+  transition: margin-right 0.5s;
+}
+.option1:hover .option1__check--rotate {
+  transition-duration: 700ms;
+  transform: rotate(360deg);
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .option1 {
+    min-width: 40rem;
+  }
+  .option1__infos {
+    width: 25rem;
+  }
+  .option1__price {
+    padding-left: 6rem;
+  }
 }
 
 .service__container {

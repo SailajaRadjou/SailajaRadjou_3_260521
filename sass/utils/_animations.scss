@@ -8,7 +8,12 @@
 }
 
 @mixin menu-card-animation {
-    animation: slideup 900ms cubic-bezier(.26,.76,.71,.49) forwards .2s;
+    animation: slideup 1300ms cubic-bezier(0,0,0,1) forwards .4s;
     opacity: 0;
+}
+
+.menu-anim{
+    position: relative;
+    animation: slideoutup 900ms cubic-bezier(0,0,0,1) forwards;
 }
 

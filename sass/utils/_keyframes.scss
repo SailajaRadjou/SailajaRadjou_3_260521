@@ -14,37 +14,34 @@
     }
 }
 
-@keyframes fadein {
-    from {
-      opacity: 0.5;
-      transform: scale(1);
+@keyframes slideoutup {
+    0% {
+        transform: translateY(5px);
+        opacity: 0.3;
     }
-    to {
-        transform: translateY(-20px); 
+    50% {
+        opacity: 0.6;
+    }
+    100%{
+        transform: translateY(-15px); 
       opacity:1;
     }
 }
 
 @keyframes slideup{
     0%{
-        
+        transform: translateY(5px);
         opacity: 0;
-        
     }
     25% {
         opacity: .5;
     }    
-    
     50%{
         opacity: 0.9;
-        
-        
     }
     100% {
         transform: translateY(-15px);    
-    opacity: 1;
-    
-    
+        opacity: 1;
     }
 } 
 

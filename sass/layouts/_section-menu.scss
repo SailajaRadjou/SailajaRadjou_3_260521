@@ -29,16 +29,15 @@
     align-items: flex-start;
     width: 100%;
     flex-flow: row nowrap;
-   
     &__card{
         margin: 2rem;
         width:auto;
-        
         &--display{
             @include flex-around;
             flex-flow: column wrap;
+            padding-top: 20px;
             @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
-                    align-items: flex-start;
+                align-items: flex-start;
             }
         }
         
@@ -60,6 +59,7 @@
     @include flex-between;
     @include menu-option-shadow;
     @include bg-color-white;
+    position: relative;
     border-radius: 1.5rem 1.5rem;
     margin-bottom: 2rem;   
     overflow: hidden;
@@ -83,7 +83,6 @@
             white-space: nowrap;
             font-size: 16px;
         }
-            
     }
     &__price{
         display: flex;
@@ -101,7 +100,6 @@
         @include flex-center;
         justify-content: center;
         transition-duration: .5s;
-       
     } 
     &:hover &__check{
         margin-right: 0px;
@@ -110,7 +108,69 @@
         &--rotate{
             transition-duration: 700ms;
             transform: rotate(360deg);
-            
+        }
+    }  
+    @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+        min-width: 40rem;
+        &__infos{
+            width: 25rem;
+        } 
+        &__price{
+            padding-left: 6rem;
+        }   
+    }        
+}
+.option1{
+    @include flex-between;
+    @include menu-option-shadow;
+    @include bg-color-white;
+    position: relative;
+    border-radius: 1.5rem 1.5rem;
+    margin-bottom: 2rem;   
+    overflow: hidden;
+    cursor: pointer;   
+    max-width: 350px; 
+    height: 70px; 
+    padding-left: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &__infos{
+        width: 300px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        &--title,&--description{
+            margin: .5rem;
+           overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 16px;
+        }
+    }
+    &__price{
+        display: flex;
+        align-self: last baseline;
+        padding-bottom: 0.65rem;
+        padding-right: 1rem;
+    }  
+    &__check{
+        background-color: $teritary-color;
+        font-size: map-get($icon-font-size , "check-icon");
+        color: $white-color;
+        margin: -1rem -4rem -1rem 1rem;
+        width: 4rem;
+        height: 5.5rem;
+        @include flex-center;
+        justify-content: center;
+        transition-duration: .5s;
+    } 
+    &:hover &__check{
+        margin-right: 0px;
+        min-width: 4rem;
+        transition: margin-right 0.5s;
+        &--rotate{
+            transition-duration: 700ms;
+            transform: rotate(360deg);
         }
     }  
     
@@ -123,9 +183,6 @@
             padding-left: 6rem;
         }   
     }        
-}
-.option1{
-    animation: fadein 900ms cubic-bezier(.26,.76,.71,.49) forwards;
 }
 
 
