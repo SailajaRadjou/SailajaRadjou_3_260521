@@ -13,6 +13,9 @@
     <title>Le délice des sens</title>
 </head>
 <body>
+    <div class="loader">
+        <div class="animation"></div>
+    </div>
     <header>
         <div class="menu__header">
             <a href="./index.html"> <i class="fas fa-arrow-left"></i></a>
@@ -37,7 +40,7 @@
                 <section class="menu__card">
                     <h3>Entrées</h3>
                     <div class="menu__card--display">
-                    <div class="option">            
+                    <div class="option menu-anim-delay-1">            
                         <div class="option__infos">
                             <h4 class="option__infos--title">Tartare de thon</h4>
                             <p class="option__infos--description">Assaisonné au yuzu</p>
@@ -49,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="option">
+                    <div class="option menu-anim-delay-2">
                         <div class="option__infos">
                             <h4 class="option__infos--title">Bouchée de homard croustillant</h4>
                             <p class="option__infos--description">Et sa farandole de petits légumes</p>
@@ -61,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="option">
+                    <div class="option menu-anim-delay-3">
                         <div class="option__infos">
                             <h4 class="option__infos--title">Velouté de cèpes</h4>
                             <p class="option__infos--description">Aux truffes</p>
@@ -77,78 +80,82 @@
                 </section>
                 <section class="menu__card">
                     <h3>Plats</h3>
-                    <div class="option">
-                        <div class="option__infos">
-                            <h4 class="option__infos--title">Poulet rôti aux herbes de Provence</h4>
-                            <p class="option__infos--description">Et sa crème de truffe</p>
-                        </div>
-                        <div class="option__price">40€</div>
-                        <div class="option__check"> 
-                            <div class="option__check--rotate">
-                                <i class="fas fa-check-circle"></i>
+                    <div class="menu__card--display">
+                        <div class="option menu-anim-delay-1">
+                            <div class="option__infos">
+                                <h4 class="option__infos--title">Poulet rôti aux herbes de Provence</h4>
+                                <p class="option__infos--description">Et sa crème de truffe</p>
+                            </div>
+                            <div class="option__price">40€</div>
+                            <div class="option__check"> 
+                                <div class="option__check--rotate">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="option">
-                        <div class="option__infos"> 
-                            <h4 class="option__infos--title">Langouste rôtie</h4>
-                            <p class="option__infos--description">Et ses légumes de saison</p>
-                        </div>
-                        <div class="option__price">35€</div>
-                        <div class="option__check"> 
-                            <div class="option__check--rotate">
-                                <i class="fas fa-check-circle"></i>
+                        <div class="option menu-anim-delay-2">
+                            <div class="option__infos"> 
+                                <h4 class="option__infos--title">Langouste rôtie</h4>
+                                <p class="option__infos--description">Et ses légumes de saison</p>
+                            </div>
+                            <div class="option__price">35€</div>
+                            <div class="option__check"> 
+                                <div class="option__check--rotate">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="option">
-                        <div class="option__infos"> 
-                            <h4 class="option__infos--title">Côte de boeuf Angus</h4>
-                            <p class="option__infos--description">Et sa purée de panais</p>
-                        </div>
-                        <div class="option__price"> 44€</div>
-                        <div class="option__check"> 
-                            <div class="option__check--rotate">
-                                <i class="fas fa-check-circle"></i>
+                        <div class="option menu-anim-delay-3">
+                            <div class="option__infos"> 
+                                <h4 class="option__infos--title">Côte de boeuf Angus</h4>
+                                <p class="option__infos--description">Et sa purée de panais</p>
+                            </div>
+                            <div class="option__price"> 44€</div>
+                            <div class="option__check"> 
+                                <div class="option__check--rotate">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="menu__card">
                     <h3>Desserts</h3>
-                    <div class="option">
-                        <div class="option__infos">
-                            <h4 class="option__infos--title">Farandole de desserts</h4>
-                            <p class="option__infos--description">Du chef</p>
-                        </div>
-                        <div class="option__price">18€</div>
-                        <div class="option__check"> 
-                            <div class="option__check--rotate">
-                                <i class="fas fa-check-circle"></i>
+                    <div class="menu__card--display">
+                        <div class="option menu-anim-delay-1">
+                            <div class="option__infos">
+                                <h4 class="option__infos--title">Farandole de desserts</h4>
+                                <p class="option__infos--description">Du chef</p>
+                            </div>
+                            <div class="option__price">18€</div>
+                            <div class="option__check"> 
+                                <div class="option__check--rotate">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="option">
-                        <div class="option__infos"> 
-                            <h4 class="option__infos--title">Crème brulée</h4>
-                            <p class="option__infos--description">Revisitée</p>
-                        </div>
-                        <div class="option__price">22€</div>
-                        <div class="option__check"> 
-                            <div class="option__check--rotate">
-                                <i class="fas fa-check-circle"></i>
+                        <div class="option menu-anim-delay-2">
+                            <div class="option__infos"> 
+                                <h4 class="option__infos--title">Crème brulée</h4>
+                                <p class="option__infos--description">Revisitée</p>
+                            </div>
+                            <div class="option__price">22€</div>
+                            <div class="option__check"> 
+                                <div class="option__check--rotate">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="option">
-                        <div class="option__infos"> 
-                            <h4 class="option__infos--title">Tiramisu</h4>
-                            <p class="option__infos--description">À la noisette</p>
-                        </div>
-                        <div class="option__price">23€ </div>
-                        <div class="option__check"> 
-                            <div class="option__check--rotate">
-                                <i class="fas fa-check-circle"></i>
+                        <div class="option menu-anim-delay-3">
+                            <div class="option__infos"> 
+                                <h4 class="option__infos--title">Tiramisu</h4>
+                                <p class="option__infos--description">À la noisette</p>
+                            </div>
+                            <div class="option__price">23€ </div>
+                            <div class="option__check"> 
+                                <div class="option__check--rotate">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
