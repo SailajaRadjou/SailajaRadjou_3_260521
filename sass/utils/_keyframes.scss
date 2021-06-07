@@ -16,31 +16,35 @@
 
 @keyframes fadein {
     from {
-      opacity:0;
+      opacity: 0.5;
+      transform: scale(1);
     }
     to {
+        transform: translateY(-20px); 
       opacity:1;
     }
 }
 
-@keyframes slideOutUp {
-    0% {
-        transform: translateY(0);
+@keyframes slideup{
+    0%{
+        
         opacity: 0;
+        
     }
-    25%{
-        opacity: 0.3;
-        animation-delay: 1s;
-    }
+    25% {
+        opacity: .5;
+    }    
+    
     50%{
-        opacity: 0.8;
-        animation-delay: 2s;
+        opacity: 0.9;
+        
         
     }
     100% {
+        transform: translateY(-15px);    
     opacity: 1;
-    animation-delay: 3s;
-    transform: translateY(-10%);
+    
+    
     }
-    } 
+} 
 

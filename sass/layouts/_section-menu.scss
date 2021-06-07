@@ -29,9 +29,11 @@
     align-items: flex-start;
     width: 100%;
     flex-flow: row nowrap;
+   
     &__card{
         margin: 2rem;
         width:auto;
+        
         &--display{
             @include flex-around;
             flex-flow: column wrap;
@@ -122,6 +124,8 @@
         }   
     }        
 }
-
+.option1{
+    animation: fadein 900ms cubic-bezier(.26,.76,.71,.49) forwards;
+}
 
 

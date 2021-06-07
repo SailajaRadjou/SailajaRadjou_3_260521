@@ -8,7 +8,7 @@
 }
 
 @mixin menu-card-animation {
-    animation: slideOutUp 4s both cubic-bezier(.5,1.58,.34,.82) 1s;
-    transform: scale(0);
+    animation: slideup 900ms cubic-bezier(.26,.76,.71,.49) forwards .2s;
+    opacity: 0;
 }
 
