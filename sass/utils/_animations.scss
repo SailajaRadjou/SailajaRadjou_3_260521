@@ -1,0 +1,14 @@
+@mixin animation-loader {
+    animation:fadeout 2s forwards;
+    animation-delay: 0.8s;
+}
+
+@mixin animation-rotate {
+    animation: spin 1.2s linear;
+}
+
+@mixin menu-card-animation {
+    animation: slideOutUp 4s both cubic-bezier(.5,1.58,.34,.82) 1s;
+    transform: scale(0);
+}
+
