@@ -24,6 +24,7 @@
     @include flex-center;
     border: none;
     transition-duration: .25s;
+    color: black;
     &__unlike, &__like{
         
         @include heart-color;
@@ -34,8 +35,7 @@
         opacity: 0; 
        transform: translateX(-2.39rem);
        &:hover{
-        
-            animation: like-heart 1000ms cubic-bezier(0, 0, 0, 1) both;
+            animation: like-heart 1200ms cubic-bezier(0, 0, 0, 1) forwards;
            /* transition: all 0.5s ease;*/
             
         } 
@@ -58,7 +58,7 @@
         text-decoration: none;
         color: $white-color;
         cursor: pointer;
-        /*transition-duration: .25s;*/
+        transition-duration: .25s;
         &:hover{
             @include shadow-hover;
         }

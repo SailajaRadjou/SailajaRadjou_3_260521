@@ -3,7 +3,6 @@
 @mixin flex-center {
     display: flex;
     align-items: center;
-    
 }
 @mixin flex-between {
     display: flex;
@@ -20,6 +19,7 @@
     align-items: center;
     justify-content: space-around;
 }
+
 /*Background Color*/
 @mixin bg-color {
     background-color: $light-gray;
@@ -31,6 +31,7 @@
     background-color: $dark-gray;
     color: $white-color;
 }
+
 /* Shadows */
 
 @mixin header-shadow {
@@ -54,19 +55,7 @@
 /*font color for heart icon*/
 @mixin heart-color {
     font-size: map-get($icon-font-size , "heart-icon");
-    background: -webkit-linear-gradient($secondary-color, $primary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+    /*background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    background-clip: text;*/
+    color:darken($secondary-color, 20%);
 }
-
-/*@mixin tablet {
-    @media screen and (min-width:map-get($breakpoints, tablet)){
-      @content;
-    }
-  }
-  @mixin mobile {
-    @media screen and (min-width:map-get($breakpoints, mobile)){
-      @content;
-    }
-  }*/
