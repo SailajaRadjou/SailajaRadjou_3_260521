@@ -63,15 +63,15 @@
             margin-left: 0rem;
         }
         &__resto{
-                flex-flow: column wrap;
-                justify-content: center;
-                width:auto;
-                padding: 0;
-                &--content{
-                    padding: 25px 12px;
-                    width: 23rem;
-                }
-            }    
+            flex-flow: column wrap;
+            justify-content: center;
+            width:auto;
+            padding: 0;
+            &--content{
+                padding: 25px 12px;
+                width: 23rem;
+            }   
+        }    
     }
     
 }
