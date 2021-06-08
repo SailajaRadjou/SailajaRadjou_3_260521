@@ -454,14 +454,12 @@ body {
   max-width: 350px;
   height: 70px;
   padding-left: 4px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .option__infos {
   width: 300px;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
 }
 .option__infos--title, .option__infos--description {
   margin: 0.5rem;

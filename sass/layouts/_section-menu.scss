@@ -65,17 +65,14 @@
     max-width: 350px; 
     height: 70px; 
     padding-left: 4px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     &__infos{
         width: 300px;
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
-         
+        white-space: normal;
         &--title,&--description{
             margin: .5rem;
-           overflow: hidden;
+            overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             font-size: 16px;
