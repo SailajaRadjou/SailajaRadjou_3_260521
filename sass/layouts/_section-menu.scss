@@ -106,6 +106,9 @@
             @include animation-check;
         }
     }  
+    @media screen and (max-width:map-get($breakpoints, small-screen-mobile)){
+        max-width: 300px;
+    }
     @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
         min-width: 40rem;
         &__infos{

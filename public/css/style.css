@@ -409,7 +409,7 @@ body {
   flex-flow: column wrap;
   padding-top: 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu__card--display {
     align-items: flex-start;
   }
@@ -422,7 +422,7 @@ body {
     margin: 0.5rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu {
     flex-flow: column wrap;
   }
@@ -485,7 +485,12 @@ body {
   transition-duration: 700ms;
   transform: rotate(360deg);
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 340px) {
+  .option {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .option {
     min-width: 40rem;
   }
@@ -546,7 +551,7 @@ body {
     width: 17rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .services {
     flex-flow: column wrap;
     width: auto;
@@ -593,7 +598,7 @@ body {
     padding: 10px 10px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__title {
     text-align: left;
     padding-left: 1rem;
