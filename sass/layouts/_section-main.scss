@@ -57,6 +57,7 @@
             padding: 25px 25px;
         }
     }
+    
     @media screen and (max-width:map-get($breakpoints, mobile)){
         &__title{
             
@@ -119,13 +120,12 @@
     }
     @media screen and (max-width:map-get($breakpoints, mobile)){
         width: auto;
-       /* &__label{
-            justify-content: flex-start;
-        }*/
+        &__label{
+            height: 4rem;
+        }
         &__image{
             width: 21.5rem;
             height: 8rem;    
-            
         }
         &__info{
             width: 195px;
@@ -135,6 +135,16 @@
                 margin: .5rem 0 0 1rem;
             }
             
+        }
+    }
+    @media screen and (max-width:map-get($breakpoints, small-screen-mobile)){
+        width: 18.5rem;
+        &__image{
+            width: 18.5rem;
+            height: 8rem;    
+        }  
+        &__label{
+            height: 4rem;
         }
     }
     

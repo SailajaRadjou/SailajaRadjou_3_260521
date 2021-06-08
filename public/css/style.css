@@ -338,9 +338,9 @@ body {
 @media screen and (max-width: 767px) {
   .resto {
     width: auto;
-    /* &__label{
-         justify-content: flex-start;
-     }*/
+  }
+  .resto__label {
+    height: 4rem;
   }
   .resto__image {
     width: 21.5rem;
@@ -353,6 +353,18 @@ body {
   .resto__info--name, .resto__info--area {
     padding-left: 15px;
     margin: 0.5rem 0 0 1rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .resto {
+    width: 18.5rem;
+  }
+  .resto__image {
+    width: 18.5rem;
+    height: 8rem;
+  }
+  .resto__label {
+    height: 4rem;
   }
 }
 
