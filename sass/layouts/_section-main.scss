@@ -58,6 +58,7 @@
         }
     }
     
+    
     @media screen and (max-width:map-get($breakpoints, mobile)){
         &__title{
             
@@ -118,6 +119,10 @@
         }
         
     }
+   /* &:hover{
+        @include shadow-hover;
+    }*/
+   
     @media screen and (max-width:map-get($breakpoints, mobile)){
         width: auto;
         &__label{
