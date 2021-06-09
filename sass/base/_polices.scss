@@ -9,10 +9,21 @@ body{
     }        
 }
 
+.menu-header{
+    &__container{
+        &--title{
+            font-family: $font-title, cursive;
+            font-size: 1.6rem;
+            font-weight: bolder;
+        }    
+    }
+}
+
 .footer{
     &__title{
     font-family: $font-title, cursive;
     color: $white-color;
+    font-weight: normal;
     }
     &__deco{
         color: $white-color;

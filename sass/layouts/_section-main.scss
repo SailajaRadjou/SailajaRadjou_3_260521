@@ -90,6 +90,7 @@
         padding-bottom: 1rem;
         background-color: $white-color;
         border-radius: 0 0 2rem 2rem;
+        height: 4rem;
     }
     &__image{
         width: 550px;
@@ -103,29 +104,31 @@
     }
     &__info{
         @include flex-between;
+        align-items: flex-start;
         flex-direction: column;
         height: auto;
         &--name , &--area{
-            padding-left: 15px;
             margin: .5rem 0 0 1rem;
+        }
+        &--area{
+            margin-left: 1rem; 
+            font-weight: 300; 
         }
         
     }
     @include for-mobile{
         width: auto;
-        &__label{
-            height: 4rem;
-        }
+        height: auto;
         &__image{
             width: 21.5rem;
-            height: 8rem;    
+            height: 12rem;    
         }
         &__info{
             width: 195px;
             margin: 10px 0px;
             &--name , &--area{
                 padding-left: 15px;
-                margin: .5rem 0 0 1rem;
+                
             }
             
         }

@@ -16,13 +16,14 @@
     transition-duration: .25s;
     &__unlike, &__like{
         @include heart-color;
-      /*transform: translateX(0rem);*/
+      
     }
     &__like{
         opacity: 0; 
-        transform: translateX(-2.39rem);
+        transform: translateX(-2.20rem);
         &:hover{
             animation: like-heart 1200ms cubic-bezier(0, 0, 0, 1) forwards;
+            color:darken($secondary-color, 20%);
            /* transition: all 0.5s ease;*/
         } 
     }
@@ -31,7 +32,7 @@
 .commander{
     padding: 2rem;
     &__button{
-        width: 12rem;
+        width: 13rem;
         @include button-color;
         @include shadow;
         @extend %button;

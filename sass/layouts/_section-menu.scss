@@ -38,6 +38,10 @@
         @include for-tablet{
             margin: auto;
         }
+        &--header{
+            text-transform: uppercase;
+            font-weight: 300;
+        }
         &--display{
             @include flex-around;
             flex-flow: column wrap;
@@ -79,12 +83,16 @@
             font-size: 16px;
             @extend %text-wrap-point;
         }
+        &--description{
+            font-weight: 300;
+        }
     }
     &__price{
         display: flex;
         align-self: last baseline;
         padding-bottom: 0.65rem;
         padding-right: 1rem;
+        font-weight: bolder;
     }  
     &__check{
         background-color: $teritary-color;

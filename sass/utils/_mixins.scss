@@ -56,9 +56,9 @@
 /*font color for heart icon*/
 @mixin heart-color {
     font-size: map-get($icon-font-size , "heart-icon");
+    color: $font-color;
     /*background: linear-gradient(to bottom right, $secondary-color, $primary-color);
     background-clip: text;*/
-    color:darken($secondary-color, 20%);
 }
 /*for Responsive*/
 @mixin for-tablet {
