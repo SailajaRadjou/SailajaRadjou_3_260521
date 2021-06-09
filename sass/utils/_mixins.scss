@@ -3,6 +3,7 @@
 @mixin flex-center {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 @mixin flex-between {
     display: flex;
@@ -58,4 +59,20 @@
     /*background: linear-gradient(to bottom right, $secondary-color, $primary-color);
     background-clip: text;*/
     color:darken($secondary-color, 20%);
+}
+/*for Responsive*/
+@mixin for-tablet {
+    @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+      @content;
+    }
+}
+@mixin for-mobile {
+    @media screen and (max-width:map-get($breakpoints, mobile)){
+      @content;
+    }
+}
+@mixin for-small-screen-mobile {
+    @media screen and (max-width:map-get($breakpoints, small-screen-mobile)){
+        @content;
+    }    
 }

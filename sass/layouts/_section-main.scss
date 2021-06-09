@@ -13,7 +13,7 @@
         padding: 1rem;
         font-size: 1.5rem;
     }
-    @media screen and (max-width:map-get($breakpoints, mobile)){
+    @include for-mobile{
         padding-left: 0rem;
     }
 }
@@ -32,9 +32,6 @@
         padding: 0.6rem;
     }
 }
-
-
-
 
 .container{
     @include flex-center;
@@ -58,8 +55,7 @@
         }
     }
     
-    
-    @media screen and (max-width:map-get($breakpoints, mobile)){
+    @include for-mobile{
         &__title{
             
             margin-left: 0rem;
@@ -98,14 +94,7 @@
         border-radius: 2rem 2rem 0 0;
         object-fit: cover;
         &--new{
-            background-color: #a3f0dd;
-            color: #206152;
-            padding: 0.6rem;
-            border-radius: .2rem;
-            position: absolute;
-            top: .6rem;
-            right: 1rem;
-            font-weight: bolder;
+            @extend %image-new-sticker;
         }
         
     }
@@ -119,11 +108,7 @@
         }
         
     }
-   /* &:hover{
-        @include shadow-hover;
-    }*/
-   
-    @media screen and (max-width:map-get($breakpoints, mobile)){
+    @include for-mobile{
         width: auto;
         &__label{
             height: 4rem;
@@ -142,7 +127,7 @@
             
         }
     }
-    @media screen and (max-width:map-get($breakpoints, small-screen-mobile)){
+    @include for-small-screen-mobile{
         width: 18.5rem;
         &__image{
             width: 18.5rem;
@@ -152,13 +137,4 @@
             height: 4rem;
         }
     }
-    
-}   
-
-
-    
-
-
-
-
-
+}  
