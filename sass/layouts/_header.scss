@@ -15,17 +15,27 @@
 .menu__header{
     @include flex-around;
     font-size: map-get($icon-font-size , "arrow-icon");
+    height: 5rem;
     &--logo{
         width: 80%;
         text-align: center;
-        height: 2.5rem;
+        height: 4rem;
     }
     &--logosize{
         height: 2.8rem;
+        @include for-mobile{
+            height: 2rem;
+        }
     }
 }
 .menu__image{
     width: 100%;
     height: 35rem;
     object-fit: cover;
+    @include for-mobile{
+        height: 17rem;
+    }   
+    @include for-tablet{
+        height: 30rem;
+    }     
 }

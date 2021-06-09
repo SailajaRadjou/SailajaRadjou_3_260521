@@ -13,22 +13,24 @@
         padding: 1rem;
         font-size: 1.5rem;
     }
-    @include for-mobile{
+   /* @include for-mobile{
         padding-left: 0rem;
-    }
+    }*/
 }
 
 .visiter{
     @include flex-center;
+    justify-content: flex-start;
     flex-flow: column wrap;
     @include bg-color;
-    height: 17rem;
+    height: 20rem;
     &__title{
         text-align: center;
+        font-size: 1.7rem;
     }
     &__description{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding: 0.6rem;
     }
 }
@@ -65,6 +67,7 @@
             justify-content: center;
             width:auto;
             padding: 0;
+            margin: auto;
             &--content{
                 padding: 25px 12px;
                 width: 23rem;

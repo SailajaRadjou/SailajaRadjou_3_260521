@@ -9,13 +9,7 @@ $loader-color:-webkit-linear-gradient($secondary-color, $primary-color);
 
 /*font family*/
 $font-title: 'Shrikhand', sans-serif;
-$font-text: 'Roberto', sans-serif;
-
-a{
-    cursor: pointer;
-    text-decoration: none;
-    color: $font-color;
-}
+$font-text: 'Roboto', sans-serif;
 
 /*maps for icons*/
 $icon-font-size:(

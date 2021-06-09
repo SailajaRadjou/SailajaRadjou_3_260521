@@ -1,3 +1,19 @@
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: $font-color;
+}
+
+hr{
+    height: .3rem;
+    width: 3rem;
+    margin: 0;
+    background: $teritary-color;
+    border: none;
+    position: relative;
+    top: -0.9rem;
+}
+
 %image-new-sticker{
     position: absolute;
     background-color: #a3f0dd;
