@@ -2,14 +2,13 @@
     display: flex;
     flex-flow: column wrap;
     @include footer-bg-color;
-    
     &__title{
         text-align: left;
         padding-left: 10rem;
     }
     &__list{
         display: flex;
-        width: 80%;
+        width: 100%;
         justify-content: space-evenly;
         padding-bottom: 2rem;
         &--link{
@@ -23,19 +22,17 @@
         text-decoration: none;
         padding-left: .5rem;
     }
-    @media screen and (max-width:map-get($breakpoints, mobile)){
+    @include for-mobile{
         &__title{
-        text-align: left;
-        padding-left: 1rem;
+            text-align: left;
+            padding-left: 1rem;
         }
         &__list{
-        flex-flow: column wrap; 
-        padding: 10px 10px;
-        
+            flex-flow: column wrap; 
+            padding: 10px 10px;
         }
     }  
-    
-    @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+    @include for-tablet{
         &__title{
             text-align: left;
             padding-left: 1rem;

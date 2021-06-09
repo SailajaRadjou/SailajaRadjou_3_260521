@@ -17,7 +17,7 @@
         @include flex-around;
         width: auto;
         position: relative;
-        @media screen and (max-width:map-get($breakpoints, mobile)){
+        @include for-mobile{
             &--title{
                 margin-left: 0rem;
             }
@@ -36,18 +36,18 @@
             @include flex-around;
             flex-flow: column wrap;
             padding-top: 20px;
-            @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+            @include for-tablet{
                 align-items: flex-start;
             }
         }
     } 
-    @media screen and (max-width:map-get($breakpoints, mobile)){
+    @include for-mobile{
         flex-flow: column wrap;
         &__card{
             margin: .5rem;
         }    
     }
-    @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+    @include for-tablet{
         flex-flow: column wrap;
     }     
        
@@ -67,15 +67,11 @@
     padding-left: 4px;
     &__infos{
         width: 300px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: normal;
+        @extend %text-wrap-point;
         &--title,&--description{
             margin: .5rem;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
             font-size: 16px;
+            @extend %text-wrap-point;
         }
     }
     &__price{
@@ -92,7 +88,6 @@
         width: 4rem;
         height: 5.5rem;
         @include flex-center;
-        justify-content: center;
         transition-duration: .5s;
     } 
     &:hover &__check{
@@ -103,10 +98,10 @@
             @include animation-check;
         }
     }  
-    @media screen and (max-width:map-get($breakpoints, small-screen-mobile)){
+    @include for-small-screen-mobile {
         max-width: 300px;
     }
-    @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
+    @include for-tablet{
         min-width: 40rem;
         &__infos{
             width: 25rem;

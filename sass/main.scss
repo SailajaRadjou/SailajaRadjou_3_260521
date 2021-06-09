@@ -3,6 +3,7 @@
 @import "./utils/mixins";
 @import "./utils/animations";
 @import "./utils/keyframes";
+@import "./utils/typography";
 @import "./base/polices";
 @import "./components/buttons";
 @import "./layouts/header";
@@ -20,7 +21,7 @@ body{
     position: relative;
     color: $font-color;
     width: 100%;
-    @media screen and (max-width:map-get($breakpoints, mobile)){
+    @include for-mobile{
         margin: 0;
         position: relative;
     }    
@@ -33,7 +34,6 @@ body{
     border-top: 10px solid $primary-color;
     border-radius: 50%;
     @include flex-center;
-    justify-content: center;
     @include animation-rotate;
 }
 
@@ -46,10 +46,5 @@ body{
     height: 100%;
     background: $white-color;
     @include flex-center;
-    justify-content: center;
     @include animation-loader;
 }
-
-
-
-

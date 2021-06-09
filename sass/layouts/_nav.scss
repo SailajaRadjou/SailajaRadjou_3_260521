@@ -7,55 +7,49 @@
     }
 }
 .services{
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
+    &__option{
+        list-style-type: none;
+        width:20rem;
+        height: 5rem;
+        border-radius: 1.5rem 1.5rem;
+        margin: 20px;
+        @include shadow;
+        @include bg-color;
+        @include flex-center;
+        justify-content: flex-start;
+        &--num{
+            width: 30px;
+            border-radius: 50%;
+            font-size: map-get($icon-font-size , "number-icon");
+            text-align: center;
+            transform: translateX(-15px);
+            @include button-color;
+        }
+        &--icon{
+            font-size: map-get($icon-font-size , "nav-icon");
+        }
+        &--name{
+            padding-left: 20px;
+        }
+    }
+    @include for-mobile{
+        flex-flow: column wrap;
+        width:auto;
+        padding: 0;
+        margin: 0;
         &__option{
-            list-style-type: none;
-            width:20rem;
-            height: 5rem;
-            @include shadow;
-            @include bg-color;
-            border-radius: 1.5rem 1.5rem;
-            margin: 20px;
-            @include flex-center;
-            &--num{
-                width: 30px;
-                border-radius: 50%;
-                font-size: map-get($icon-font-size , "number-icon");
-                text-align: center;
-                transform: translateX(-15px);
-                @include button-color;
-            }
-            &--icon{
-                font-size: map-get($icon-font-size , "nav-icon");
-            }
-            &--name{
-                padding-left: 20px;
-            }
-
-        }
-        @media screen and (max-width:map-get($breakpoints, mobile)){
-            flex-flow: column wrap;
-            width:auto;
-            padding: 0;
-            margin: 0;
-            &__option{
-                width:17rem;
-            }    
-        }
-        @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
-            flex-flow: column wrap;
-            width:auto;
-            padding: 0;
-            margin: 0;
-            &__option{
-                width:25rem;
-            }    
+            width:17rem;
         }    
+    }
+    @include for-tablet{
+        flex-flow: column wrap;
+        width:auto;
+        padding: 0;
+        margin: 0;
+        &__option{
+            width:25rem;
+        }    
+    }    
 }
-
-
-
-
-
-
