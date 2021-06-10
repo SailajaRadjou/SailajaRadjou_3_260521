@@ -33,9 +33,12 @@
         &--name{
             padding-left: 20px;
         }
-        &:hover{
-            background-color: #e9dbf8;
-        }
+        &:hover {
+            background-color: lighten($primary-color, 33%);
+            .fas {
+                color: $primary-color;
+            }
+        }    
     }
     @include for-mobile{
         flex-flow: column wrap;
