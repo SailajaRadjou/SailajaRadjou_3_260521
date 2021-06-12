@@ -130,7 +130,7 @@
             width: 195px;
             margin: 10px 0px;
             &--name{
-                font-size: map-get($text-font-size , "restaurant-name");
+                font-size: map-get($text-font-size , "restaurant-name-mobile");
             }
             &--name , &--area{
                 padding-left: 15px;

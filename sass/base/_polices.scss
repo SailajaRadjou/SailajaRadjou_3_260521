@@ -23,10 +23,15 @@ body{
     &__title{
     font-family: $font-title, cursive;
     color: $white-color;
+    font-size: 2rem;
     font-weight: normal;
     }
     &__deco{
         color: $white-color;
         font-weight: bolder;
+        font-size: 1.4rem;
+        @include for-tablet{
+            font-size: 1.2rem;
+        }
     }
-}
+}    

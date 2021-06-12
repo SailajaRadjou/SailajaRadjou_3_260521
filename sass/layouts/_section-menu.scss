@@ -22,7 +22,14 @@
             @include flex-around;
         }
         &--title{
+            font-size: map-get($text-font-size , "menu-header-title");
             margin-left: 2rem;
+            @include for-mobile {
+                font-size: map-get($text-font-size , "menu-header-title-mobile");
+            }
+            @include for-small-screen-mobile {
+                font-size: 1.6rem;
+            }
         }    
     }
 }
@@ -78,9 +85,13 @@
     &__infos{
         width: 300px;
         @extend %text-wrap-point;
+        &--title{
+            font-size: map-get($text-font-size , "menu-option-name");
+           
+        }
         &--title,&--description{
             margin: .5rem;
-            font-size: 16px;
+            
             @extend %text-wrap-point;
         }
         &--description{
@@ -111,7 +122,14 @@
         &--rotate{
             @include animation-check;
         }
-    }  
+    } 
+    @include for-mobile {
+        &__infos{
+            &--title{
+                font-size: map-get($text-font-size , "menu-option-name-mobile");
+            }   
+        }    
+    } 
     @include for-small-screen-mobile {
         max-width: 300px;
     }
