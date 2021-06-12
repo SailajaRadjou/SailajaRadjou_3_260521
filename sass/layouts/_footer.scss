@@ -1,6 +1,7 @@
 .footer{
     display: flex;
     flex-flow: column wrap;
+    padding-top: 2rem;
     @include footer-bg-color;
     &__title{
         text-align: left;
@@ -8,13 +9,17 @@
     }
     &__list{
         display: flex;
-        width: 100%;
+        width: 80%;
         justify-content: space-evenly;
         padding-bottom: 2rem;
+        padding-left: 8rem;
         &--link{
             font-size: map-get($icon-font-size , "footer-icon");
             list-style-type: none;
             padding: .2rem;
+            &:hover{
+                text-decoration: underline;
+            }
             @include for-mobile{
                 padding-bottom: 10px;
             }
@@ -31,6 +36,7 @@
             margin: .5rem .5rem;
         }
         &__list{
+            width: 100%;
             flex-flow: column wrap; 
             padding: 0 10px 10px 10px;
         }
@@ -41,7 +47,7 @@
             padding-left: 1rem;
         }
         &__list{
-            width: auto;
+            width: 100%;
             justify-content: space-around;
             padding: 0;
             padding-bottom: 1rem;

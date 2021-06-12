@@ -40,9 +40,12 @@
     flex-flow: column wrap;
     align-items: flex-start;
     @include bg-color;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
     &__title{
         padding-left: 4rem;
         margin-left: 8rem;
+        
     }
     &__resto{
         @include flex-center;
@@ -59,7 +62,7 @@
     
     @include for-mobile{
         &__title{
-            
+            font-size: map-get($text-font-size , "container-title"); 
             margin-left: 0rem;
         }
         &__resto{
@@ -90,11 +93,11 @@
         padding-bottom: 1rem;
         background-color: $white-color;
         border-radius: 0 0 2rem 2rem;
-        height: 4rem;
+        height: 5rem;
     }
     &__image{
         width: 550px;
-        height: 150px;
+        height: 200px;
         border-radius: 2rem 2rem 0 0;
         object-fit: cover;
         &--new{
@@ -126,6 +129,9 @@
         &__info{
             width: 195px;
             margin: 10px 0px;
+            &--name{
+                font-size: map-get($text-font-size , "restaurant-name");
+            }
             &--name , &--area{
                 padding-left: 15px;
                 

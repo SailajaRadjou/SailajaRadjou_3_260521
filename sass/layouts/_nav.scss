@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: column wrap;
     align-content: center;
+    padding-top: 2rem;
     &--title{
         padding-left: 2rem;
     }
@@ -9,6 +10,7 @@
 .services{
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
     &__option{
         list-style-type: none;
         width:20rem;
@@ -32,6 +34,7 @@
         }
         &--name{
             padding-left: 20px;
+            font-size: map-get($text-font-size , "nav-option-name");
         }
         &:hover {
             background-color: lighten($primary-color, 33%);
@@ -44,16 +47,17 @@
         flex-flow: column wrap;
         width:auto;
         padding: 0;
-        margin: 0;
         &__option{
             width:17rem;
+            &--name{
+                font-size: map-get($text-font-size , "nav-option-name-mobile");
+            }
         }    
     }
     @include for-tablet{
         flex-flow: column wrap;
         width:auto;
         padding: 0;
-        margin: 0;
         &__option{
             width:25rem;
         }    
