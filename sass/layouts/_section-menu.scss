@@ -18,19 +18,30 @@
         width: auto;
         position: relative;
         margin-top: 1.5rem;
-        @include for-tablet{
-            @include flex-around;
-        }
+        
         &--title{
             font-size: map-get($text-font-size , "menu-header-title");
             margin-left: 2rem;
-            @include for-mobile {
+        }    
+    }
+    @include for-tablet{
+        &__container{
+            @include flex-around;
+        }
+    }
+    @include for-mobile {
+        &__container{
+            &--title{
                 font-size: map-get($text-font-size , "menu-header-title-mobile");
             }
-            @include for-small-screen-mobile {
-                font-size: 1.6rem;
+        }
+    }        
+    @include for-small-screen-mobile {
+        &__container{
+            &--title{
+                font-size: 1.3rem;
             }
-        }    
+        }
     }
 }
 .menu{
