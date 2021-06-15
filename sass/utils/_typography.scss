@@ -46,5 +46,5 @@ hr{
 
 %button-hover{
     background-color: lighten($primary-color, 5%);
-    background-blend-mode: darken;
+    background-blend-mode: lighten;
 }
