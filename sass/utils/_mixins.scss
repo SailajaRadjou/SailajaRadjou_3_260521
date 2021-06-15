@@ -22,8 +22,11 @@
 }
 
 /*Background Color*/
-@mixin bg-color {
-    background-color: $light-gray;
+@mixin bg-color($colour:$dark-gray){
+    background-color: lighten($colour,67%);
+}
+@mixin location-bg-color($colour:$dark-gray){
+    background-color: lighten($colour,60%);
 }
 @mixin bg-color-white {
     background-color: $white-color;  

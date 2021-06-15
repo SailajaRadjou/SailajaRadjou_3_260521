@@ -1,7 +1,8 @@
 .location{
     @include flex-center;
     justify-content: center;
-    background-color:darken($color: #f3f3f3, $amount: 5);
+    /*background-color:darken($color: #f3f3f3, $amount: 5);*/
+    @include location-bg-color;
     @include header-shadow;
     font-size: map-get($icon-font-size , "location-icon");
     padding-left: 4rem;
