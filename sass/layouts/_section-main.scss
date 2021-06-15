@@ -89,6 +89,8 @@
     @include shadow;
     cursor: pointer;
     background-color: $white-color;
+    transform: scale(1.0);
+    transition: transform 300ms;
     &__label{
         @include flex-between;
         padding-bottom: 1rem;
@@ -119,6 +121,15 @@
             font-weight: 300; 
         }
         
+    }
+    &:hover{
+        transform: scale(1.05);
+        .resto__info{
+            &--name, &--area{
+                
+                color: lighten(blue, 10%);
+            }
+        }
     }
     @include for-mobile{
         width: auto;

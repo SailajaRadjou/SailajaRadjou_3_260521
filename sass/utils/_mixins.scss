@@ -63,7 +63,7 @@
     /*background: linear-gradient(to bottom right, $secondary-color, $primary-color);
     background-clip: text;*/
 }
-/*for Responsive*/
+/*for media queries*/
 @mixin for-tablet {
     @media screen and (min-width:map-get($breakpoints, mobile)+1) and (max-width:map-get($breakpoints, tablet)-1){
       @content;
