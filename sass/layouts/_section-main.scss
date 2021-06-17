@@ -6,13 +6,14 @@
     @include header-shadow;
     font-size: map-get($icon-font-size , "location-icon");
     padding-left: 4rem;
+    height: 3.8rem;
     &__search{
         border: none;
         width: 16rem;
         height: 3rem;
         background: transparent;
         padding: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.5rem;    
     }
    /* @include for-mobile{
         padding-left: 0rem;
@@ -24,15 +25,20 @@
     justify-content: flex-start;
     flex-flow: column wrap;
     @include bg-color;
-    height: 20rem;
+    width: 100%;
+    height: 21rem;
+    margin: 0;
     &__title{
         text-align: center;
         font-size: 1.7rem;
+        padding-top: 2rem;
+        height: 5rem;
     }
     &__description{
         text-align: center;
-        font-size: 1.3rem;
-        padding: 0.6rem;
+        font-size: 1.25rem;
+        color: lighten($dark-gray, 15%);
+        
     }
 }
 

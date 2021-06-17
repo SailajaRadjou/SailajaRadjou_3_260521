@@ -1,5 +1,7 @@
 .button{
     width: 19rem;
+    height: 4rem;
+    padding: 1rem;
     @include button-color;
     @include shadow;
     @extend %button;
