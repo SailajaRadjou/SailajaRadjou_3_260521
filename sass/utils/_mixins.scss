@@ -58,10 +58,18 @@
 
 /*font color for heart icon*/
 @mixin heart-color {
+    
     font-size: map-get($icon-font-size , "heart-icon");
+    color: black; /*hsl(280, 64%, 62%);*/
+    background: -webkit-linear-gradient(to bottom, $secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*font-size: map-get($icon-font-size , "heart-icon");
     color: $font-color;
-    /*background: linear-gradient(to bottom right, $secondary-color, $primary-color);
-    background-clip: text;*/
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    background-clip: text;
+    */
+    
 }
 /*for media queries*/
 @mixin for-tablet {
